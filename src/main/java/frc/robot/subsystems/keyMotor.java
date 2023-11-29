@@ -63,6 +63,15 @@ keyMotorRelay = new Relay(0);
 
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
+    public void spin()
+    {
+        keyMotorRelay.set(Relay.Value.kOn);
+    }
+
+    public void stop()
+    {
+        keyMotorRelay.set(Relay.Value.kOff);
+    }
 
 }
 

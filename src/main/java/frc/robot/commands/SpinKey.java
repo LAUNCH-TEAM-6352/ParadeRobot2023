@@ -61,7 +61,16 @@ public class SpinKey extends CommandBase {
     // Called every time the scheduler runs while the command is scheduled.
     @Override
     public void execute() {
-        //I THINK I NEED TO ADD CODE HERE, BUT I AM NOT SURE WHAT
+        
+        if(m_run)
+        {
+            m_keyMotor.spin();
+        }
+        else
+        {
+            m_keyMotor.stop();
+        }
+        
     }
 
     // Called once the command ends or is interrupted.

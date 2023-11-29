@@ -64,12 +64,13 @@ public class SpinHead extends CommandBase {
     // Called every time the scheduler runs while the command is scheduled.
     @Override
     public void execute() {
-        //I THINK I NEED TO ADD CODE HERE, BUT I AM NOT SURE WHAT
+        m_headMotor.set(m_motorSpeed);
     }
 
     // Called once the command ends or is interrupted.
     @Override
     public void end(boolean interrupted) {
+        m_headMotor.stop();
     }
 
     // Returns true when the command should end.
