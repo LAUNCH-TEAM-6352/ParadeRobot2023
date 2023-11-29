@@ -79,7 +79,7 @@ public class DriveTrain extends SubsystemBase {
         addChild("drive",drive);
         drive.setSafetyEnabled(true);
         drive.setExpiration(0.1);
-        drive.setMaxOutput(0.1);
+        drive.setMaxOutput(0.5);
 
 
 

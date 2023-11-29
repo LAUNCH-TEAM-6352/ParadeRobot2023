@@ -55,7 +55,7 @@ public class DriveWithGamepad extends CommandBase {
     // Called every time the scheduler runs while the command is scheduled.
     @Override
     public void execute() {
-            m_driveTrain.drive(RobotContainer.getXboxController1().getRightX(),RobotContainer.getXboxController1().getRightY());
+            m_driveTrain.drive(RobotContainer.getInstance().getXboxController1().getLeftX(),RobotContainer.getInstance().getXboxController1().getLeftY());
             //THIS LINE IS ATTEMPTING TO MAKE A STATIC REFERENCE TO A NON-STATIC getXboxController1 METHOD
     }
 
