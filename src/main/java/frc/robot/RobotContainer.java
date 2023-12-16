@@ -106,10 +106,10 @@ final JoystickButton keyStartSpinningButton = new JoystickButton(xboxController1
 keyStartSpinningButton.onTrue(new SpinKey(true, m_keyMotor).withInterruptBehavior(InterruptionBehavior.kCancelSelf));
                         
 final JoystickButton headSpinCWButton = new JoystickButton(xboxController1, XboxController.Button.kRightBumper.value);        
-headSpinCWButton.whileTrue(new SpinHead(0.2, "", m_headMotor).withInterruptBehavior(InterruptionBehavior.kCancelSelf));
+headSpinCWButton.whileTrue(new SpinHead(0.6, "", m_headMotor).withInterruptBehavior(InterruptionBehavior.kCancelSelf));
                         
 final JoystickButton headSpinCCWButton = new JoystickButton(xboxController1, XboxController.Button.kLeftBumper.value);        
-headSpinCCWButton.whileTrue(new SpinHead(-0.2, "", m_headMotor).withInterruptBehavior(InterruptionBehavior.kCancelSelf));
+headSpinCCWButton.whileTrue(new SpinHead(-0.6, "", m_headMotor).withInterruptBehavior(InterruptionBehavior.kCancelSelf));
                         
 
 
